@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report - Q4 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h1>Q4 Financial Earnings</h1>
+            <h3>Technical Consultant Report</h3>
+            <p>
+                <small>Prepared by: <a href="mailto:21f2000516@ds.study.iitm.ac.in">21f2000516@ds.study.iitm.ac.in</a></small>
+            </p>
+            
+            <aside class="notes">
+                Welcome everyone. Today we will review the Q4 technical and financial performance.
+                Remind the board that this presentation is hosted live on GitHub Pages.
+            </aside>
+        </section>
+
+        <section data-markdown>
+            <textarea data-template>
+                ## Executive Summary
+                
+                *This slide is generated using Markdown.*
+
+                - Revenue exceeded targets by **15%**
+                - Digital transformation costs reduced by **8%**
+                - Infrastructure uptime: **99.99%**
+
+                > "Technology is the new engine of finance."
+            </textarea>
+            <aside class="notes">
+                Highlight the revenue target first. Mention that Markdown allows for rapid content updates by non-technical staff.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Key Growth Drivers</h2>
+            <p>Sequential analysis of Q4 performance:</p>
+            <ul>
+                <li class="fragment">Cloud Migration completed ahead of schedule</li>
+                <li class="fragment">AI-driven fraud detection implementation</li>
+                <li class="fragment highlight-red">Reduction in legacy server maintenance</li>
+            </ul>
+            <aside class="notes">
+                Click through these one by one. Emphasize the red highlighted item as a cost-saving measure.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Algorithmic Trading Model</h2>
+            <p>New Python implementation for high-frequency analysis:</p>
+            <pre><code data-trim data-noescape class="language-python">
+def calculate_moving_average(data, window_size):
+    """
+    Computes SMA for financial datasets
+    """
+    i = 0
+    moving_averages = []
+    
+    while i < len(data) - window_size + 1:
+        window = data[i : i + window_size]
+        window_average = round(sum(window) / window_size, 2)
+        moving_averages.append(window_average)
+        i += 1
+        
+    return moving_averages
+            </code></pre>
+            <aside class="notes">
+                Walk through the windowing function. Explain how this optimized our trade execution latency.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Financial Projection Models</h2>
+            <p>Using the Black-Scholes Formula for derivatives:</p>
+            
+            <div style="font-size: 0.8em; margin-top: 20px;">
+                \[
+                C = S_0 N(d_1) - K e^{-rT} N(d_2)
+                \]
+            </div>
+
+            <p>Where risk-free rate ($r$) is calculated as:</p>
+            <p>
+                $ r = \frac{\ln(FV / PV)}{t} $
+            </p>
+
+            <aside class="notes">
+                Explain d1 and d2 components if asked. Focus on the risk-free rate calculation impacting Q1 forecasts.
+            </aside>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+<script>
+    // Initialize Reveal.js with dependencies
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+    });
+</script>
+
+</body>
+</html>
